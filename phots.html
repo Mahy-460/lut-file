@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="phots.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="photo.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>prince hasan</title>
+</head>
+<body>
+  <nav class=" w3-hide-small">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="name">Prince Hasan</label>
+    <ul>
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="#" class="active">ABOUT</a></li>
+        <li><a href="shop.html" class="active">SHOP</a></li>
+        <li><a href="phots.html" class="active">PHOTS</a></li>
+    </ul>
+  </nav>
+    
+      <!-- Navbar on small screens (Hidden on medium and large screens) -->
+      <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+          <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+          <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+          <a href="shop.html" class="w3-bar-item w3-button" style="width:25% !important">SHOP</a>
+          <a href="phots.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+        </div>
+      </div>
+    
+  <!--------------------------------
+   <h1>See Lut WIth After & Before</h1>
+    <div class="row">
+      <div class="column">
+        <img id="img-area" src="pic/pic1.JPG" alt="" class="hover-img">
+       <div class="button-area">
+        <button id="before" onclick="before()" style="background-color:tomato ;">before</button>
+        <button id="after" onclick="after()" style="background-color:#8D8DFF;">after</button>
+       </div>
+      </div>
+      <script>
+        var img = document.getElementById("img-area");
+        function before(){
+            img.src="pic/pic1.JPG";
+        }
+        function after(){
+          img.src="pic/pic2.JPG";
+        }
+      </script>
+    </div> 
+
+    <div class="row">
+      <div class="column">
+        <img id="mondo" src="pic/pic4.JPG" alt="" class="hover-img">
+       <div class="button-area">
+        <button id="before-2" onclick="second()" style="background-color:tomato ;">before</button>
+        <button id="after-2" onclick="Second()"  style="background-color:#8D8DFF;">after</button>
+       </div>
+      </div>
+      <script>
+        var law = document.getElementById("mondo");
+        function second(){
+            law.src="pic/pic4.JPG";
+        }
+        function Second(){
+          law.src="pic/pic5.JPG";
+        }
+      </script>
+    </div> 
+
+
+    <div class="row">
+      <div class="column">
+        <img id="londo" src="pic/pic6.jpg" alt="" class="hover-img">
+       <div class="button-area">
+        <button id="before-2" onclick="Thard()" style="background-color:tomato ;">before</button>
+        <button id="after-2" onclick="thard()" style="background-color:#8D8DFF;">after</button>
+       </div>
+      </div>
+      <script>
+        var kaw = document.getElementById("londo");
+        function Thard(){
+            kaw.src="pic/pic6.JPG";
+        }
+        function thard(){
+          kaw.src="pic/pic1.JPG";
+        }
+      </script>
+    </div> 
+   
+ ------------------------------------>
+<div class="w3-padding-64 w3-content">
+  <h1 style="text-align:center ;">LUTS – TRAILER</h1>
+
+  <div class="video-player">
+    <video controls width="100%">
+      <source src="pic/The 70 Best Free LUTs Hand-picked By A Colorist For Your Films(1080P_HD).mp4" type="video/mp4">
+    </video>
+  </div><br><br>
+  <h2 class="w3-text-light-grey">PHOTS</h2>
+  <hr style="width:200px" class="w3-opacity">
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half">
+      <img src="pic/pic1.JPG" style="width:100%">
+      <img src="pic/pic2.JPG" style="width:100%">
+      <img src="pic/pic3.JPG" style="width:100%">
+      <img src="pic/pic6.JPG" style="width:100%">
+    </div>
+ 
+    <div class="w3-half">
+      <img src="pic/pic4.JPG" style="width:100%">
+      <img src="pic/pic5.JPG" style="width:100%">
+      <img src="pic/pic4.JPG" style="width:100%">
+      <img src="pic/pic2.JPG" style="width:100%">
+    </div>
+</div>
+</body>
+</html>

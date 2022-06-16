@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
+}
+
+nav{
+    background-color: grey;
+    height: 80px;
+    width: 100%;
+
+}
+label.name{
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 100px;
+    letter-spacing:0.2em;
+    font-family:EB Garamond;
+}
+nav ul{
+   float: right;
+   margin-right: 20px;
+   text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    color: aliceblue;
+    border-radius: 13px;
+}
+nav ul li a:hover{
+    color: black;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 50vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        color: black
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.footer{
+    padding: 40px;
+    background-color: gray;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    opacity: 0.75;
+    margin: 0 8px;
+}
+.footer_last{
+    text-align: center;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+section h2{
+    position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-transform: uppercase;
+     font-size: 27vw;
+     font-family: 'Bebas Neue', cursive;
+     text-align: center;
+     font-weight: 800;
+     line-height: 0.85em;
+     color: #fff;
+     background: rgb(0, 0, 0,0.95);
+     mix-blend-mode: multiply;
+}
+section h2 span{
+    font-size: 27vw;
+}
